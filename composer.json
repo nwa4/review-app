@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 {
     "require": {
         "phalcon/devtools": "dev-master"
     }
-=======
-{
-    "require": {
-        "phalcon/devtools": "dev-master"
-    }
->>>>>>> origin/master
+
 }
