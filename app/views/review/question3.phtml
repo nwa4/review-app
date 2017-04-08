@@ -1,0 +1,38 @@
+
+<div class="row">
+	
+	<div class="row">
+		<?= ReviewData::getError($this->request->get('error') ?? '') ?>
+	</div>
+
+	
+	<form action="/review/process" method="post">
+
+	<div class="form-group">
+		<label for="name">Gender:</label>
+	</div>
+	
+	<div class="form-group form-inline">
+	  <label class="form-check-label">
+		<input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male"> Male
+	  </label>
+	
+	
+	  <label class="form-check-label">
+		<input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female"> Female
+	  </label>
+	
+	</div>
+	<div>
+		<input type="hidden" name="question" value="<?= $question ?>" />
+	</div>
+	<br />
+	
+	<div class="form-group right">
+		<input class="btn btn-primary" type="submit" value="Continue">
+	</div>
+	
+	</form>
+
+
+</div>

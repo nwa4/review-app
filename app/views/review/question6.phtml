@@ -1,0 +1,42 @@
+
+<div class="row">
+
+	<div class="row photoError">
+		<?= ReviewData::getError($this->request->get('error') ?? '') ?>
+	</div>
+	
+	<form action="/review/process" method="post" enctype="multipart/form-data">
+
+	<div class="form-group">
+		<label for="name">Please attach your photo:</label>
+		
+	</div>
+	
+	<div class="form-group">
+		<label class="custom-file">
+		  <input type="file" id="photo" name="photo" class="custom-file-input">
+		  <span class="custom-file-control"></span>
+		</label>
+		
+	</div>
+	
+	<div class="row">
+		<input type="hidden" name="question" value="<?= $question ?>" />
+		<img id="img" style="height: 100px;" />
+	</div>
+	
+	<div class="row">
+		<label id="lblMsg"></label>
+	</div>
+	
+	<br />
+	
+	<div class="form-group right">
+		<input class="btn btn-primary btnSendPhoto" type="submit" value="Continue" />
+		
+	</div>
+	
+	</form>
+
+
+</div>
