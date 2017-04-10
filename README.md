@@ -1,5 +1,5 @@
 
-Review App - code assessment
+Review App - code assessment (Requires PHP7 and Phalcon PHP extention)
 
 You need to create a review form, which results you need to save in the database. In the review form, you need to make different data input fields such as Chechkbox, select, text, radio, file fields. Review form needs to be made one question after the other one, not all in one, but one fallowing the other one. 
 
